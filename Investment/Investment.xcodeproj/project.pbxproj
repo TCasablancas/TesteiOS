@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF9EED0B232C0EB200613058 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EED0A232C0EB200613058 /* Theme.swift */; };
+		EF9EED0D232C0F0600613058 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EED0C232C0F0600613058 /* Color+Extension.swift */; };
+		EF9EED0F232C0F2000613058 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EED0E232C0F2000613058 /* Constants.swift */; };
+		EF9EED12232C11F500613058 /* CollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EED11232C11F500613058 /* CollectionViewCell+Extension.swift */; };
+		EF9EED14232C122800613058 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EED13232C122800613058 /* Fonts.swift */; };
+		EF9EED1B232C159D00613058 /* DINEngschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9EED15232C159C00613058 /* DINEngschriftStd.otf */; };
+		EF9EED1C232C159D00613058 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9EED16232C159C00613058 /* DINPro-Bold.otf */; };
+		EF9EED1D232C159D00613058 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9EED17232C159C00613058 /* DINPro-Light.otf */; };
+		EF9EED1E232C159D00613058 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9EED18232C159D00613058 /* DINPro-Medium.otf */; };
+		EF9EED1F232C159D00613058 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9EED19232C159D00613058 /* DINPro-Regular.otf */; };
+		EF9EED20232C159D00613058 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF9EED1A232C159D00613058 /* DINPro-Black.otf */; };
 		EFD8A2EE232BF62C00943BAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD8A2ED232BF62C00943BAB /* AppDelegate.swift */; };
 		EFD8A2F0232BF62C00943BAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD8A2EF232BF62C00943BAB /* ViewController.swift */; };
 		EFD8A2F3232BF62C00943BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD8A2F1232BF62C00943BAB /* Main.storyboard */; };
@@ -35,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF9EED0A232C0EB200613058 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		EF9EED0C232C0F0600613058 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		EF9EED0E232C0F2000613058 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF9EED11232C11F500613058 /* CollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		EF9EED13232C122800613058 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EF9EED15232C159C00613058 /* DINEngschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINEngschriftStd.otf; sourceTree = "<group>"; };
+		EF9EED16232C159C00613058 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
+		EF9EED17232C159C00613058 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
+		EF9EED18232C159D00613058 /* DINPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium.otf"; sourceTree = "<group>"; };
+		EF9EED19232C159D00613058 /* DINPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Regular.otf"; sourceTree = "<group>"; };
+		EF9EED1A232C159D00613058 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Black.otf"; sourceTree = "<group>"; };
 		EFD8A2EA232BF62C00943BAB /* Investment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD8A2ED232BF62C00943BAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFD8A2EF232BF62C00943BAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +98,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF9EED09232C0E2600613058 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EED0A232C0EB200613058 /* Theme.swift */,
+				EF9EED0C232C0F0600613058 /* Color+Extension.swift */,
+				EF9EED13232C122800613058 /* Fonts.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EF9EED10232C111000613058 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EED15232C159C00613058 /* DINEngschriftStd.otf */,
+				EF9EED1A232C159D00613058 /* DINPro-Black.otf */,
+				EF9EED16232C159C00613058 /* DINPro-Bold.otf */,
+				EF9EED17232C159C00613058 /* DINPro-Light.otf */,
+				EF9EED18232C159D00613058 /* DINPro-Medium.otf */,
+				EF9EED19232C159D00613058 /* DINPro-Regular.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		EFD8A2E1232BF62C00943BAB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +144,7 @@
 		EFD8A2EC232BF62C00943BAB /* Investment */ = {
 			isa = PBXGroup;
 			children = (
+				EF9EED10232C111000613058 /* fonts */,
 				EFD8A320232BF6A900943BAB /* Assets */,
 				EFD8A321232BF6C000943BAB /* Cells */,
 				EFD8A31F232BF69500943BAB /* Controllers */,
@@ -173,6 +219,9 @@
 		EFD8A323232BF6D100943BAB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EF9EED09232C0E2600613058 /* Theme */,
+				EF9EED0E232C0F2000613058 /* Constants.swift */,
+				EF9EED11232C11F500613058 /* CollectionViewCell+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -290,7 +339,13 @@
 			files = (
 				EFD8A2FB232BF62C00943BAB /* LaunchScreen.storyboard in Resources */,
 				EFD8A2F8232BF62C00943BAB /* Assets.xcassets in Resources */,
+				EF9EED1D232C159D00613058 /* DINPro-Light.otf in Resources */,
+				EF9EED1B232C159D00613058 /* DINEngschriftStd.otf in Resources */,
+				EF9EED1F232C159D00613058 /* DINPro-Regular.otf in Resources */,
+				EF9EED20232C159D00613058 /* DINPro-Black.otf in Resources */,
 				EFD8A2F3232BF62C00943BAB /* Main.storyboard in Resources */,
+				EF9EED1C232C159D00613058 /* DINPro-Bold.otf in Resources */,
+				EF9EED1E232C159D00613058 /* DINPro-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,9 +370,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9EED14232C122800613058 /* Fonts.swift in Sources */,
 				EFD8A2F0232BF62C00943BAB /* ViewController.swift in Sources */,
+				EF9EED0D232C0F0600613058 /* Color+Extension.swift in Sources */,
+				EF9EED0B232C0EB200613058 /* Theme.swift in Sources */,
 				EFD8A2F6232BF62C00943BAB /* Investment.xcdatamodeld in Sources */,
 				EFD8A2EE232BF62C00943BAB /* AppDelegate.swift in Sources */,
+				EF9EED12232C11F500613058 /* CollectionViewCell+Extension.swift in Sources */,
+				EF9EED0F232C0F2000613058 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
