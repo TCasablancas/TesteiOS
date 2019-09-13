@@ -99,10 +99,16 @@
 		EFD8A2EC232BF62C00943BAB /* Investment */ = {
 			isa = PBXGroup;
 			children = (
+				EFD8A320232BF6A900943BAB /* Assets */,
+				EFD8A321232BF6C000943BAB /* Cells */,
+				EFD8A31F232BF69500943BAB /* Controllers */,
+				EFD8A324232BF6DF00943BAB /* Home */,
+				EFD8A322232BF6CC00943BAB /* Network */,
+				EFD8A323232BF6D100943BAB /* Utils */,
+				EFD8A31E232BF68B00943BAB /* Views */,
 				EFD8A2ED232BF62C00943BAB /* AppDelegate.swift */,
 				EFD8A2EF232BF62C00943BAB /* ViewController.swift */,
 				EFD8A2F1232BF62C00943BAB /* Main.storyboard */,
-				EFD8A2F7232BF62C00943BAB /* Assets.xcassets */,
 				EFD8A2F9232BF62C00943BAB /* LaunchScreen.storyboard */,
 				EFD8A2FC232BF62C00943BAB /* Info.plist */,
 				EFD8A2F4232BF62C00943BAB /* Investment.xcdatamodeld */,
@@ -126,6 +132,56 @@
 				EFD8A312232BF62D00943BAB /* Info.plist */,
 			);
 			path = InvestmentUITests;
+			sourceTree = "<group>";
+		};
+		EFD8A31E232BF68B00943BAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFD8A31F232BF69500943BAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EFD8A320232BF6A900943BAB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EFD8A2F7232BF62C00943BAB /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EFD8A321232BF6C000943BAB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EFD8A322232BF6CC00943BAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EFD8A323232BF6D100943BAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EFD8A324232BF6DF00943BAB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
