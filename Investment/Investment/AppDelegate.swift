@@ -8,15 +8,31 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController: UINavigationController?
+    var orientationLock = UIInterfaceOrientationMask.portrait
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 150
+        
+//        let navigationBarAppearace = UINavigationBar.appearance()
+//        let attrs = [
+//            NSAttributedString.Key.foregroundColor: UIColor.white,
+//            //NSAttributedString.Key.font: UIFont(name: FontCustom.quicksandBold.rawValue, size: 34)!,
+//            NSAttributedString.Key.kern: 0
+//            ] as [NSAttributedString.Key : Any]
+//        navigationBarAppearace.largeTitleTextAttributes = attrs
+//        navigationBarAppearace.barTintColor = UIColor.init(hexString: "0x610BFC")
+//        navigationBarAppearace.prefersLargeTitles = true
+        
         return true
     }
 
@@ -86,6 +102,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+    
+    struct AppUtility {
+        static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
+            if let delegate = UIApplication.shared.delegate as? AppDelegate {
+                delegate.orientationLock = orientation
+            }
+        }
+        
+        static func lockOrientation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation:UIInterfaceOrientation) {
+            self.lockOrientation(orientation)
+            UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
         }
     }
 
