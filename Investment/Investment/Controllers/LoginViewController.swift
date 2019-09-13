@@ -7,9 +7,27 @@
 //
 
 import UIKit
+import MaterialComponents.MaterialTextFields
 
 class LoginViewController: UIViewController {
     
+    override func viewDidLoad() {
+        
+        self.setupUI()
+        self.setupTexts()
+    }
     
+}
+
+extension LoginViewController : SetupUI {
     
+    func setupUI() {
+        
+        
+    }
+    
+    func setupTexts() {
+        
+        
+    }
 }

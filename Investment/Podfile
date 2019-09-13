@@ -9,6 +9,7 @@ target 'Investment' do
 
   pod 'IQKeyboardManager'
   pod 'IQKeyboardManagerSwift'
+  pod 'MaterialComponents/TextFields'
 
   target 'InvestmentTests' do
     inherit! :search_paths

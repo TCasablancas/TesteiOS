@@ -12,6 +12,8 @@ class Theme {
     
     struct `default` {
         
+        //MAIN COLORS
+        
         static let white = UIColor.white
         static let black = UIColor.black
         static let mainRed = UIColor(hexString: Constants.Colors.Hex.mainRed)
@@ -21,6 +23,17 @@ class Theme {
         static let mainGray = UIColor(hexString: Constants.Colors.Hex.mainGray)
         static let lightGray = UIColor(hexString: Constants.Colors.Hex.lightGray)
         
+        //BUTTON STYLE
         
+        static func mainBtnRounded(_ button: UIButton, radius: CGFloat = 20) {
+            
+            button.borderRadiusButton(radius: radius)
+            button.tintColor = Theme.default.white
+            button.titleLabel?.numberOfLines = 0
+            button.titleLabel?.textAlignment = .center
+            button.backgroundColor = Theme.default.mainRed
+            button.titleLabel?.font = FontCustom.dinRegular.font(16)
+            button.titleLabel?.adjustsFontForContentSizeCategory = true
+        }
     }
 }

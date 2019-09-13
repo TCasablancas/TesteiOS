@@ -1,20 +1,39 @@
 PODS:
   - IQKeyboardManager (6.4.0)
   - IQKeyboardManagerSwift (6.4.0)
+  - MaterialComponents/AnimationTiming (85.7.0)
+  - MaterialComponents/Palettes (85.7.0)
+  - MaterialComponents/private/Application (85.7.0)
+  - MaterialComponents/private/Math (85.7.0)
+  - MaterialComponents/TextFields (85.7.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (85.7.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
 
 DEPENDENCIES:
   - IQKeyboardManager
   - IQKeyboardManagerSwift
+  - MaterialComponents/TextFields
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManager
     - IQKeyboardManagerSwift
+    - MaterialComponents
+    - MDFInternationalization
 
 SPEC CHECKSUMS:
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+  MaterialComponents: 5a8386aa9de7ee8bf9a6d31ac73b82a0f0a39a1e
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
 
-PODFILE CHECKSUM: b9da3f58053bfc73ba7a04c382bf293878999529
+PODFILE CHECKSUM: 1c5e56ee8b5ba2de849d4ce87415e6edcf55b98d
 
 COCOAPODS: 1.6.2
