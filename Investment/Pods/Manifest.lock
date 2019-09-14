@@ -1,6 +1,6 @@
 PODS:
-  - IQKeyboardManager (6.4.0)
-  - IQKeyboardManagerSwift (6.4.0)
+  - Alamofire (4.8.2)
+  - IQKeyboardManagerSwift (6.0.5)
   - MaterialComponents/AnimationTiming (85.7.0)
   - MaterialComponents/Palettes (85.7.0)
   - MaterialComponents/private/Application (85.7.0)
@@ -15,29 +15,33 @@ PODS:
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
+  - ObjectMapper (3.5.1)
   - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
-  - IQKeyboardManager
-  - IQKeyboardManagerSwift
+  - Alamofire (~> 4.7)
+  - IQKeyboardManagerSwift (~> 6.0.0)
   - MaterialComponents/TextFields
+  - ObjectMapper (~> 3.3)
   - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - IQKeyboardManager
+    - Alamofire
     - IQKeyboardManagerSwift
     - MaterialComponents
     - MDFInternationalization
+    - ObjectMapper
     - TextFieldEffects
 
 SPEC CHECKSUMS:
-  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
-  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
   MaterialComponents: 5a8386aa9de7ee8bf9a6d31ac73b82a0f0a39a1e
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: fcebfe4125e6ea035d82ea035887e08e287512aa
+PODFILE CHECKSUM: 46035d98b252b017ade072b3237eba83dead9309
 
 COCOAPODS: 1.6.2

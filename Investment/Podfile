@@ -7,10 +7,12 @@ target 'Investment' do
 
   # Pods for Investment
 
-  pod 'IQKeyboardManager'
-  pod 'IQKeyboardManagerSwift'
+  pod 'IQKeyboardManagerSwift', '~> 6.0.0'
   pod 'MaterialComponents/TextFields'
   pod 'TextFieldEffects'
+  pod 'Alamofire', '~> 4.7'
+  pod 'ObjectMapper', '~> 3.3'
+
 
   target 'InvestmentTests' do
     inherit! :search_paths
