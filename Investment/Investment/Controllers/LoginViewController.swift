@@ -7,15 +7,33 @@
 //
 
 import UIKit
-import MaterialComponents.MaterialTextFields
+import TextFieldEffects
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var formView: UIStackView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var fldLogin: HoshiTextField!
+    @IBOutlet weak var fldPassword: HoshiTextField!
+    @IBOutlet weak var btnLogin: UIButton!
     
     override func viewDidLoad() {
         
         self.setupUI()
         self.setupTexts()
+        
+        let placeholder = HoshiTextField()
+        placeholder.borderActiveColor = Theme.default.mainRed
+        placeholder.borderInactiveColor = Theme.default.lightGray
+        placeholder.placeholderColor = Theme.default.mainGray
+        
+        self.view.addSubview(placeholder)
     }
+}
+
+
+extension LoginViewController {
+    
     
 }
 
@@ -23,11 +41,11 @@ extension LoginViewController : SetupUI {
     
     func setupUI() {
         
-        
+        Theme.default.mainBtnRounded(self.btnLogin, radius: 25)
     }
     
     func setupTexts() {
         
-        
+        self.btnLogin.setTitle("Entrar", for: .normal)
     }
 }

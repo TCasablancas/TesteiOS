@@ -32,7 +32,7 @@ class Theme {
             button.titleLabel?.numberOfLines = 0
             button.titleLabel?.textAlignment = .center
             button.backgroundColor = Theme.default.mainRed
-            button.titleLabel?.font = FontCustom.dinRegular.font(16)
+            button.titleLabel?.font = FontCustom.dinBold.font(22)
             button.titleLabel?.adjustsFontForContentSizeCategory = true
         }
     }

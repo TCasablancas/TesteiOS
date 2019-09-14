@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-import IQKeyboardManagerSwift
+//import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,17 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var navigationController: UINavigationController?
     var orientationLock = UIInterfaceOrientationMask.portrait
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        IQKeyboardManager.shared.enable = true
-        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
-        IQKeyboardManager.shared.keyboardDistanceFromTextField = 150
         
+//        IQKeyboardManager.shared.enable = true
+//        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+//        IQKeyboardManager.shared.keyboardDistanceFromTextField = 150
+//        
 //        let navigationBarAppearace = UINavigationBar.appearance()
 //        let attrs = [
 //            NSAttributedString.Key.foregroundColor: UIColor.white,
-//            //NSAttributedString.Key.font: UIFont(name: FontCustom.quicksandBold.rawValue, size: 34)!,
+//            NSAttributedString.Key.font: UIFont(name: FontCustom.dinRegular.rawValue, size: 34)!,
 //            NSAttributedString.Key.kern: 0
 //            ] as [NSAttributedString.Key : Any]
 //        navigationBarAppearace.largeTitleTextAttributes = attrs
