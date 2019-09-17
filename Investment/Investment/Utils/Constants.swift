@@ -13,7 +13,8 @@ struct Constants {
     struct Segues {
         
         static let MAIN_PUSH = "MAIN_PUSH"
-        
+        static let INVESTMENT_SEGUE = "INVESTMENT_SEGUE"
+        static let SHOW_CONTACT = "SHOW_CONTACT"
     }
     
     struct Colors {
@@ -26,6 +27,7 @@ struct Constants {
             static let lightRed = "#eb7174"
             static let darkRed = "#c80000"
             static let mainGreen = "#8dd55f"
+            static let middleGray = "898989"
             static let mainGray = "#333333"
             static let lightGray = "#b1b1b1"
         }

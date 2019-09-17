@@ -262,6 +262,7 @@
                         <outlet property="fldLogin" destination="Xy7-zh-pFA" id="zsk-eD-zhH"/>
                         <outlet property="fldPassword" destination="srC-ZQ-uOs" id="tgf-Xa-PlL"/>
                         <outlet property="formView" destination="gCF-hb-1Ij" id="Jir-M5-aOz"/>
+                        <outlet property="lbTitle" destination="ap9-pJ-qiH" id="owS-yl-VDA"/>
                         <outlet property="scrollView" destination="HJL-BM-3PR" id="ZyE-nJ-Z2Q"/>
                     </connections>
                 </viewController>

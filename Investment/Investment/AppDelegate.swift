@@ -19,20 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
-//        IQKeyboardManager.shared.enable = true
-//        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
-//        IQKeyboardManager.shared.keyboardDistanceFromTextField = 150
-//        
-//        let navigationBarAppearace = UINavigationBar.appearance()
-//        let attrs = [
-//            NSAttributedString.Key.foregroundColor: UIColor.white,
-//            NSAttributedString.Key.font: UIFont(name: FontCustom.dinRegular.rawValue, size: 34)!,
-//            NSAttributedString.Key.kern: 0
-//            ] as [NSAttributedString.Key : Any]
-//        navigationBarAppearace.largeTitleTextAttributes = attrs
-//        navigationBarAppearace.barTintColor = UIColor.init(hexString: "0x610BFC")
-//        navigationBarAppearace.prefersLargeTitles = true
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.barTintColor = UIColor.white
+        navigationBarAppearace.shadowImage = UIImage()
+        navigationBarAppearace.isTranslucent = true
         
         return true
     }

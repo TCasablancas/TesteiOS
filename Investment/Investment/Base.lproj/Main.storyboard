@@ -27,13 +27,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Login-->
+        <!--HelloScreen-->
         <scene sceneID="cw7-4z-Rps">
             <objects>
-                <viewControllerPlaceholder storyboardName="Login" id="VCm-eP-PKe" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="HelloScreen" id="VCm-eP-PKe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abM-N3-Bit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="108"/>
+            <point key="canvasLocation" x="960" y="100"/>
         </scene>
     </scenes>
 </document>

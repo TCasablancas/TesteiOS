@@ -67,7 +67,7 @@ public enum FontCustom: String{
         switch self {
             
         case .dinLight:
-            return self.scaledFont(font: UIFont.systemFont(ofSize: value, weight: .light))
+            return self.scaledFont(font: UIFont.systemFont(ofSize: value))
         case .dinMedium:
             return self.scaledFont(font: UIFont.systemFont(ofSize: value, weight: .medium))
         case .dinRegular:

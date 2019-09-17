@@ -11,11 +11,15 @@ import TextFieldEffects
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var formView: UIStackView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var fldLogin: HoshiTextField!
     @IBOutlet weak var fldPassword: HoshiTextField!
     @IBOutlet weak var btnLogin: UIButton!
+    
+    var dataSource = [Cells]()
+    
     
     override func viewDidLoad() {
         
@@ -28,6 +32,7 @@ class LoginViewController: UIViewController {
         placeholder.placeholderColor = Theme.default.mainGray
         
         self.view.addSubview(placeholder)
+        
     }
 }
 
@@ -47,5 +52,7 @@ extension LoginViewController : SetupUI {
     func setupTexts() {
         
         self.btnLogin.setTitle("Entrar", for: .normal)
+        self.lbTitle.text = "\(dataSource)"
+        
     }
 }

@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.performSegue(withIdentifier: Constants.Segues.MAIN_PUSH, sender: nil)
         }
+        
+        
     }
 
 
