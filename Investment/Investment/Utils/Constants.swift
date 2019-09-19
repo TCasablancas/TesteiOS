@@ -10,11 +10,15 @@ import UIKit
 
 struct Constants {
     
+    static let urlCells = "https://floating-mountain-50292.herokuapp.com/cells.json"
+    static let urlScreen = "https://floating-mountain-50292.herokuapp.com/fund.json"
+    
     struct Segues {
         
         static let MAIN_PUSH = "MAIN_PUSH"
         static let INVESTMENT_SEGUE = "INVESTMENT_SEGUE"
         static let SHOW_CONTACT = "SHOW_CONTACT"
+        static let SHOW_INVESTMENTS = "SHOW_INVESTMENTS"
     }
     
     struct Colors {

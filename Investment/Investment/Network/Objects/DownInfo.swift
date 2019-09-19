@@ -7,20 +7,20 @@
 //
 
 import Foundation
-import ObjectMapper
+import Alamofire
 
-class DownInfo: BasePojo {
+class DownInfo {
     
-    @objc dynamic var name: String?
-    @objc dynamic var data: String?
+    var name: String
+    var data: String
     
-    convenience required init?(map: Map) {
-        self.init()
-    }
-    
-    override func mapping(map: Map) {
+    init?(json: JSON) {
         
-        name <- map["screen.name"]
-        data <- map["screen.data"]
+        guard let name = json["name"] as? String,
+        let data = json["data"] as? String
+            else { return nil }
+        
+        self.name = name
+        self.data = data
     }
 }

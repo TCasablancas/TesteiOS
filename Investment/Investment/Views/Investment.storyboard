@@ -152,13 +152,17 @@
                                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-Bc-Wpf">
                                                                         <rect key="frame" x="20" y="20" width="374" height="160"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <connections>
+                                                                            <outlet property="dataSource" destination="KJV-vl-HAj" id="m8s-3z-oAB"/>
+                                                                            <outlet property="delegate" destination="KJV-vl-HAj" id="9I5-70-LLh"/>
+                                                                        </connections>
                                                                     </tableView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="bottom" secondItem="8hY-Bc-Wpf" secondAttribute="bottom" constant="20" id="BpL-0d-D8P"/>
                                                                     <constraint firstItem="8hY-Bc-Wpf" firstAttribute="leading" secondItem="EKL-v7-Uwg" secondAttribute="leading" constant="20" id="RUK-4k-TJG"/>
-                                                                    <constraint firstAttribute="height" constant="200" id="k1a-6c-V6g"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="k1a-6c-V6g"/>
                                                                     <constraint firstAttribute="trailing" secondItem="8hY-Bc-Wpf" secondAttribute="trailing" constant="20" id="xIy-kg-Tgb"/>
                                                                     <constraint firstItem="8hY-Bc-Wpf" firstAttribute="top" secondItem="EKL-v7-Uwg" secondAttribute="top" constant="20" id="yVT-lB-Psf"/>
                                                                 </constraints>
@@ -170,7 +174,7 @@
                                                                         <rect key="frame" x="20" y="20" width="374" height="134"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="134" id="KDd-AK-Biz"/>
+                                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="134" id="KDd-AK-Biz"/>
                                                                         </constraints>
                                                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                         <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -199,6 +203,7 @@
                                                     <constraint firstItem="agv-Qp-Nh7" firstAttribute="top" secondItem="2YN-Lk-aM9" secondAttribute="top" constant="20" id="5Il-fe-rrn"/>
                                                     <constraint firstItem="agv-Qp-Nh7" firstAttribute="leading" secondItem="2YN-Lk-aM9" secondAttribute="leading" id="HSz-Mw-RTs"/>
                                                     <constraint firstAttribute="height" constant="450" id="NUF-5E-Ehe"/>
+                                                    <constraint firstAttribute="bottom" secondItem="agv-Qp-Nh7" secondAttribute="bottom" constant="26" id="RBh-w7-gp4"/>
                                                     <constraint firstAttribute="trailing" secondItem="agv-Qp-Nh7" secondAttribute="trailing" id="uxt-RD-1KZ"/>
                                                 </constraints>
                                             </view>
@@ -306,7 +311,7 @@
                         <outlet property="secondTable" destination="vlU-co-VnL" id="XXM-qG-5Vq"/>
                         <outlet property="secondTitle" destination="wAO-lY-ceK" id="E3R-O9-08v"/>
                         <outlet property="tableTitle" destination="OzB-HL-5qg" id="81j-Oe-kRt"/>
-                        <segue destination="Pxm-zM-k2i" kind="show" identifier="SHOW_CONTACT" id="aDv-7k-0eX"/>
+                        <segue destination="Pxm-zM-k2i" kind="presentation" identifier="SHOW_CONTACT" modalPresentationStyle="currentContext" id="aDv-7k-0eX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQ1-Ke-THl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -316,7 +321,9 @@
         <!--Contact-->
         <scene sceneID="xNi-cB-wyy">
             <objects>
-                <viewControllerPlaceholder storyboardName="Contact" id="Pxm-zM-k2i" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Contact" id="Pxm-zM-k2i" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BfW-yy-KI4"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZ9-XV-hlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="314" y="75"/>

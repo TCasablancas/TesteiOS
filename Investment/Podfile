@@ -7,9 +7,6 @@ target 'Investment' do
 
   # Pods for Investment
 
-  pod 'RealmSwift'
-  pod 'IQKeyboardManagerSwift', '~> 6.0.0'
-  pod 'MaterialComponents/TextFields'
   pod 'TextFieldEffects'
   pod 'Alamofire', '~> 4.7'
   pod 'ObjectMapper', '~> 3.3'

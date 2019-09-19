@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Fund: BasePojo {
+class Fund: Mapper, Codable {
     
     @objc dynamic var title: String?
     @objc dynamic var fundName: String?
@@ -18,9 +18,7 @@ class Fund: BasePojo {
     @objc dynamic var riskTitle: String?
     @objc dynamic var risk: Int = 0
     @objc dynamic var infoTitle: String?
-    dynamic var moreInfo: [MoreInfo]?
     dynamic var info: [Info]?
-    dynamic var downInfo: [DownInfo]?
     
     convenience required init?(map: Map) {
         self.init()
@@ -35,9 +33,7 @@ class Fund: BasePojo {
         riskTitle <- map["riskTitle"]
         risk <- map["risk"]
         infoTitle <- map["infoTitle"]
-        moreInfo <- map["moreInfo"]
         info <- map["info"]
-        downInfo <- map["downInfo"]
     }
 }
 
